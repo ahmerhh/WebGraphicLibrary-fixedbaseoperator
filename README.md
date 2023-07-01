@@ -13,36 +13,37 @@ $ npm install --save @ahmerhh/WebGraphicsLibrary_FixedBaseOperator
 ```js
 import FixedBaseOperator from '@ahmerhh/WebGraphicsLibrary_FixedBaseOperator';
 
-// setup gl, program and buffers
 
-const FixedBaseOperator = new FixedBaseOperator(gl, 512, 512);
+// setup context(Graphic Library), program and buffers
+
+const FixedBaseOperator = new FixedBaseOperator(context, 512, 512);
 
 // render to FixedBaseOperator
 FixedBaseOperator.bind();
-gl.drawElements(gl.POINTS, 0, 6);
+context.drawElements(context.POINTS, 0, 6);
 FixedBaseOperator.unbind();
 
 // render to default framebuffer
-gl.drawElements(gl.POINTS, 0, 6);
+context.drawElements(context.POINTS, 0, 6);
 ```
 
 ## API
 
-#### `FixedBaseOperator = new FixedBaseOperator(gl, width, height)`
+#### `FixedBaseOperator = new FixedBaseOperator(context, width, height)`
 
-Create a new instance, where `gl` is the [WebGL context](https://github.com/ahmerhh/WebGraphicLibrary_FixedBaseOperator).
+Create a new instance, where `context` is the [Webcontext context](https://github.com/ahmerhh/WebGraphicLibrary_FixedBaseOperator).
 
 #### `FixedBaseOperator.bind()`
 
-Make the FixedBaseOperator the active one. Every draw calls will target him. To restore the default framebuffer call `FixedBaseOperator.unbind()` or `gl.bindFramebuffer(gl.FRAMEBUFFER, null)`.
+Make the FixedBaseOperator the active one. Every draw calls will target him. To restore the default framebuffer call `FixedBaseOperator.unbind()` or `context.bindFramebuffer(context.FRAMEBUFFER, null)`.
 
 #### `FixedBaseOperator.unbind()`
 
-Same as calling `gl.bindFramebuffer(gl.FRAMEBUFFER, null);`.
+Same as calling `context.bindFramebuffer(context.FRAMEBUFFER, null);`.
 
 #### `FixedBaseOperator.dispose()`
 
-Delete instance and underlying `Texture`. Calls `gl.deleteFramebuffer`.
+Delete instance and underlying `Texture`. Calls `context.deleteFramebuffer`.
 
 ## License
 

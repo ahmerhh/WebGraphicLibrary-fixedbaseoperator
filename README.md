@@ -11,7 +11,7 @@ $ npm install --save @ahmerhh/WebGraphicsLibrary_FixedBaseOperator
 ## Usage
 
 ```js
-import FixedBaseOperator from '@ahmerhh/WebGraphicsLibrary_FixedBaseOperator';
+import FixedBaseOperator from '@ahmerhh/WebGraphicLibrary_FixedBaseOperator';
 
 
 // setup context(Graphic Library), program and buffers

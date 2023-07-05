@@ -1,7 +1,7 @@
 import test from 'tape';
 import getcontext from '@ahmerhh/context-context';
 import Texture from '@ahmerhh/context-texture';
-import FixedBaseOperator from '../src';
+// import FixedBaseOperator from '../src';
 
 const canvas = document.createElement('canvas');
 const contextContext = getcontext(canvas);

@@ -1,4 +1,4 @@
-import { isPOT } from 'math-utils';
+import { isPOT } from 'math-functions';
 import Texture from '@ahmerhh/gl-texture';
 
 /**

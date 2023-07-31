@@ -1,17 +1,17 @@
 {
-    "name": "@ahmerhh/webgraphiclibrary_fixedbaseoperator",
+    "name": "@ahmerhh/webgraphiclibrary-fixedbaseoperator",
     "version": "0.0.2",
     "description": "WebGL framebuffer wrapper.",
     "main": "dist/index.js",
     "scripts": {
       "start": "budo example/index.js --live -- -t babelify",
       "test": "browserify test/index.js -t babelify | browser-run --static . | tap-spec",
-      "build": "browserify src/index.js -t babelify -s @ahmerhh/WebGraphicLibrary_FixedBaseOperator > dist/index.js",
+      "build": "browserify src/index.js -t babelify -s @ahmerhh/WebGraphicLibrary-FixedBaseOperator > dist/index.js",
       "prepublish": "npm run build"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/ahmerhh/WebGraphicLibrary_FixedBaseOperator.git"
+      "url": "git+https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator.git"
     },
     "keywords": [
       "WebGL",
@@ -21,9 +21,9 @@
     "author": "ahmerhh <ahmerhh@protonmail.com>",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/ahmerhh/WebGraphicLibrary_FixedBaseOperator/issues"
+      "url": "https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator/issues"
     },
-    "homepage": "https://github.com/ahmerhh/WebGraphicLibrary_FixedBaseOperator#readme",
+    "homepage": "https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator#readme",
     "devDependencies": {
       "babel-preset-es2015": "^6.3.13",
       "babelify": "^7.2.0",

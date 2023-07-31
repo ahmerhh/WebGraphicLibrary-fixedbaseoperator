@@ -133,6 +133,4 @@ const textureDisplay = new TextureDisplay(gl, fbo.texture, 0.25, 0.25, 0.75, 0);
   renderProgram.setUniform('uModelViewMatrix', modelViewMatrix);
 
   // Bind the FBO texture as input to the render program
-  renderProgram.setUniform('uPositionsTexture', fbo.texture.bind(1));
-
- 
+  renderProgram.setUniform('uPositionsTexture', fbo.texture.bind(1))})();

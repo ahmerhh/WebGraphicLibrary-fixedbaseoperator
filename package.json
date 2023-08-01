@@ -1,7 +1,7 @@
 {
     "name": "@ahmerhh/webgraphiclibrary-fixedbaseoperator",
     "version": "0.0.2",
-    "description": "WebGL framebuffer wrapper.",
+    "description": "WebWebGraphicLibrary framebuffer wrapper.",
     "main": "dist/index.js",
     "scripts": {
       "start": "budo example/index.js --live -- -t babelify",
@@ -14,7 +14,7 @@
       "url": "git+https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator.git"
     },
     "keywords": [
-      "WebGL",
+      "WebWebGraphicLibrary",
       "framebuffer",
       "fbo"
     ],
@@ -35,13 +35,13 @@
     },
     "dependencies": {
       "@ahmerhh/geo-plane": "^1.0.1",
-      "@ahmerhh/gl-buffer": "^1.0.2",
-      "@ahmerhh/gl-context": "^1.0.2",
-      "@ahmerhh/gl-program": "^1.0.3",
-      "@ahmerhh/gl-texture": "^2.0.1",
-      "@ahmerhh/gl-texture-display": "0.0.1",
-      "gl-matrix": "^2.3.1",
-      "math-utils": "^1.0.1"
+      "@ahmerhh/WebGraphicLibrary-buffer": "^1.0.2",
+      "@ahmerhh/WebGraphicLibrary-context": "^1.0.2",
+      "@ahmerhh/WebGraphicLibrary-program": "^1.0.3",
+      "@ahmerhh/WebGraphicLibrary-texture": "^2.0.1",
+      "@ahmerhh/WebGraphicLibrary-texture-display": "0.0.1",
+      "WebGraphicLibrary-matrix": "^2.3.1",
+      "math-functions": "^1.0.1"
     }
   }
   

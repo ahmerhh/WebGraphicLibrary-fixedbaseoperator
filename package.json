@@ -1,47 +1,50 @@
 {
-    "name": "@ahmerhh/webgraphiclibrary-fixedbaseoperator",
-    "version": "0.0.2",
-    "description": "WebWebGraphicLibrary framebuffer wrapper.",
-    "main": "dist/index.js",
-    "scripts": {
-      "start": "budo example/index.js --live -- -t babelify",
-      "test": "browserify test/index.js -t babelify | browser-run --static . | tap-spec",
-      "build": "browserify src/index.js -t babelify -s @ahmerhh/WebGraphicLibrary-FixedBaseOperator > dist/index.js",
-      "prepublish": "npm run build"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator.git"
-    },
-    "keywords": [
-      "WebWebGraphicLibrary",
-      "framebuffer",
-      "fbo"
-    ],
-    "author": "ahmerhh <ahmerhh@protonmail.com>",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator/issues"
-    },
-    "homepage": "https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator#readme",
-    "devDependencies": {
-      "babel-preset-es2015": "^6.3.13",
-      "babelify": "^7.2.0",
-      "browser-run": "^3.0.8",
-      "browserify": "^13.0.0",
-      "budo": "^8.0.3",
-      "tap-spec": "^4.1.1",
-      "tape": "^4.4.0"
-    },
-    "dependencies": {
-      "@ahmerhh/geo-plane": "^1.0.1",
-      "@ahmerhh/WebGraphicLibrary-buffer": "^1.0.2",
-      "@ahmerhh/WebGraphicLibrary-context": "^1.0.2",
-      "@ahmerhh/WebGraphicLibrary-program": "^1.0.3",
-      "@ahmerhh/WebGraphicLibrary-texture": "^2.0.1",
-      "@ahmerhh/WebGraphicLibrary-texture-display": "0.0.1",
-      "WebGraphicLibrary-matrix": "^2.3.1",
-      "math-functions": "^1.0.1"
-    }
+  "name": "@ahmerhh/webgraphiclibrary-fixedbaseoperator",
+  "version": "0.0.2",
+  "description": "WebWebGraphicLibrary framebuffer wrapper.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "budo example/index.js --live -- -t babelify",
+    "test": "browserify test/index.js -t babelify | browser-run --static . | tap-spec",
+    "build": "browserify src/index.js -t babelify -s @ahmerhh/WebGraphicLibrary-FixedBaseOperator > dist/index.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator.git"
+  },
+  "keywords": [
+    "WebWebGraphicLibrary",
+    "framebuffer",
+    "fbo"
+  ],
+  "author": "ahmerhh <ahmerhh@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator/issues"
+  },
+  "homepage": "https://github.com/ahmerhh/WebGraphicLibrary-FixedBaseOperator#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browser-run": "^3.0.8",
+    "browserify": "^13.0.0",
+    "budo": "^8.0.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0"
+  },
+  "dependencies": {
+    "@ahmerhh/geo-plane": "^1.0.1",
+    "@ahmerhh/WebGraphicLibrary-buffer": "^1.0.2",
+    "@ahmerhh/WebGraphicLibrary-context": "^1.0.2",
+    "@ahmerhh/WebGraphicLibrary-program": "^1.0.3",
+    "@ahmerhh/WebGraphicLibrary-texture": "^2.0.1",
+    "@ahmerhh/WebGraphicLibrary-texture-display": "0.0.1",
+    "WebGraphicLibrary-matrix": "^2.3.1",
+    "math-functions": "^1.0.1"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
   }
-  
+}
